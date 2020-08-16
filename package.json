@@ -1,0 +1,21 @@
+{
+  "name": "clipboard",
+  "version": "1.0.0",
+  "description": "Clipboad App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "Electron"
+  ],
+  "author": "Germain Michaud <gmichaud.pro@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^9.1.2"
+  },
+  "dependencies": {
+    "bulma": "^0.9.0",
+    "vue": "^2.6.11"
+  }
+}

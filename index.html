@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clipboard</title>
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css" />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <main id="app">
+      <nav class="panel">
+        <p class="panel-heading has-text-centered">{{title}}</p>
+        <a
+          class="panel-block is-active"
+          v-for="item in historyReversed"
+          @click="itemClicked(item)"
+        >
+          <pre>{{item.text}}</pre>
+          <br />
+          <small>{{item.clipped}}</small>
+        </a>
+      </nav>
+    </main>
+    <script>
+      require("./renderer.js");
+    </script>
+  </body>
+</html>
