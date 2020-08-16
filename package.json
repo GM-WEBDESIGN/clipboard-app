@@ -11,6 +11,10 @@
   ],
   "author": "Germain Michaud <gmichaud.pro@gmail.com>",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GM-WEBDESIGN/clipboard-app.git"
+  },
   "devDependencies": {
     "electron": "^9.1.2"
   },
